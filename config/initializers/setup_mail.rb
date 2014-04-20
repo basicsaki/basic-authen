@@ -2,8 +2,8 @@ ActionMailer::Base.smtp_settings={
 	:address=>"smtp.gmail.com",
 	:port=>587,
 	:domain=>"localhost.localdomain",
-	:user_name=>"instaprintest@gmail.com",
-	:password=>"incorrect1x!",
+	:user_name=>"your user_name",
+	:password=>"your gmail password",
 	:authentication=>"plain",
 	:enable_starttls_auto => true
 }
