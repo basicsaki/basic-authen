@@ -1,0 +1,7 @@
+<h1>Pages#home</h1>
+<p>Find me in app/views/pages/home.html.erb</p>
+<ul>
+<%if current_user %>
+<li><%= link_to "Logout",logout_path%></li>
+</ul>
+<% end%>

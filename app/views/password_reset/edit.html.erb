@@ -1,0 +1,7 @@
+Please enter the new password
+
+<%= form_tag password_reset_path,:id=>params[:id],:method=>:put do%>
+	Password<%= password_field_tag :password%>
+	Password Confirmation<%= password_field_tag :password_confirmation%>
+<%= submit_tag "submit"%>
+	<%end%>
