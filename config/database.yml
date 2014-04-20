@@ -13,8 +13,8 @@ development:
   encoding: utf8
   database: auth_test_development
   pool: 5
-  username: root
-  password: correct
+  username: 
+  password: 
   socket: /var/lib/mysql/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
@@ -25,8 +25,8 @@ test:
   encoding: utf8
   database: auth_test_test
   pool: 5
-  username: root
-  password: correct
+  username: 
+  password: 
   socket: /var/lib/mysql/mysql.sock
 
 production:
@@ -34,6 +34,6 @@ production:
   encoding: utf8
   database: auth_test_production
   pool: 5
-  username: root
+  username: 
   password:
   socket: /var/lib/mysql/mysql.sock
