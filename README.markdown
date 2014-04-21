@@ -7,6 +7,7 @@
 <p>Mail already setup with google smtp configuration.Just add the credentials</p>
 <p>Ip of the client setup.</p>
 <p>Some user validations</p>
+<p>Timeoutable password reset</p>
 
 Hope it helps people like me just learning rails. 
 
