@@ -18,10 +18,26 @@ class PasswordResetController < ApplicationController
     user=User.find_by(:password_reset_token=>params[:id])
   end
 
-  def update
-    user=User.find_by(:password_reset_token=>params[:id])
-    user.update(:password=>params[:password])
-    redirect_to root_path
+   def update
+    if params[:password].present?
+      user=User.find_by(:password_reset_token=>params[:id])
+  
+        if user.password_reset_sent_at <2.hours.ago
+          if user.update(:password=>params[:password])
+            redirect_to root_path,:notice=>"Password reset sucessfully"
+          else
+            flash[:notice]="PLease enter a valid email(Minimum length is 6 characters)"
+            render 'edit'
+          end
+        else
+            flash[:notice]="Password reset expired."
+            render 'edit'
+        end
+    
+    else
+      flash[:notice]="Please enter an email"
+      render 'edit'
+  end
   end
 
 end
