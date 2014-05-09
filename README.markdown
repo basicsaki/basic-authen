@@ -9,5 +9,5 @@
 <p>Some user validations</p>
 <p>Timeoutable password reset</p>
 
-Hope it helps people like me just learning rails. 
+
 
